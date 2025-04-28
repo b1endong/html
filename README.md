@@ -1,2 +1,1 @@
-# html
-learning html css js
+# Learing HTML, CSS, JS
