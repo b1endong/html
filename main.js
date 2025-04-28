@@ -12,6 +12,15 @@ yes_btn.addEventListener("click", function () {
 
 no_location = no_btn.getBoundingClientRect();
 
+no_btn.addEventListener("touchstart", function () {
+    const maxX = window.innerWidth - no_location.width;
+    const maxY = window.innerHeight - no_location.height;
+    const randomX = Math.random() * maxX;
+    const randomY = Math.random() * maxY;
+    no_btn.style.left = randomX + "px";
+    no_btn.style.top = randomY + "px";
+});
+
 no_btn.addEventListener("mouseover", function () {
     const maxX = window.innerWidth - no_location.width;
     const maxY = window.innerHeight - no_location.height;
