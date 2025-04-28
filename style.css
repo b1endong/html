@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFAFBD;
+    background: -webkit-linear-gradient(to right, #ffc3a0, #FFAFBD);
+    background: linear-gradient(to right, #ffc3a0, #FFAFBD);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+#gif {
+    cursor: zoom-in;
+}
+
+#gif:active {
+    transform: scale3d(1.3, 1.3, 1.3);
+}
+
+#title {
+    font-size: 50px;
+    font-weight: 300px;
+    font-family: 'Tagesschrift', 'static';
+    color: red;
+    margin: 20px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 2px 4px gray;
+    color: white;
+    margin: 30px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+}
+
+#yes-btn {
+    background-color: rgb(209, 42, 70);
+    margin-left: -200px;
+}
+
+#no-btn {
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid black;
+    margin-right: -200px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
